@@ -1,19 +1,20 @@
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/gen2"))()
 
 local window = Rayfield:CreateWindow({
-    Name = "Rift Hub",
-    Subtitle = "Version 26.0.1",
+    Name = "Moonlight Hub",
+    Subtitle = "Version 26.0.11",
     SidebarLayout = true,
 
     ShowIcon = true,
-    Icon = "rbxassetid://123936456061793",
+    Icon = "rbxassetid://80584007281265",
 
-    Theme = "Ember",
+    Theme = "Cobalt",
 })
 
 local HomeTab = window:CreateTab({ name = "Home", icon = 9405923687 })
-local UniversalTab = window:CreateTab({ name = "Universal", icon = 15081504003 })
+local UniversalTab = window:CreateTab({ name = "Universal / FE", icon = 15081504003 })
 local NDSTab = window:CreateTab({ name = "NDS", icon = 11894535915 })
+local JSSTab = window:CreateTab({ name = "JJS", icon = 11894535915 })
 
 HomeTab:CreateSection({ name = "Player", icon = 13285102351 })
 
@@ -48,7 +49,7 @@ HomeTab:CreateSlider({
     end,
 })
 
-UniversalTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+UniversalTab:CreateSection({ name = "Universal Scripts", icon = 9405930424 })
 
 UniversalTab:CreateButton({
     name = "Infinite Yield",
@@ -74,6 +75,10 @@ UniversalTab:CreateButton({
     end,
 })
 
+
+
+UniversalTab:CreateSection({ name = "FE Scripts", icon = 9405930424 })
+
 NDSTab:CreateSection({ name = "Scripts", icon = 9405930424 })
 
 NDSTab:CreateButton({
@@ -83,6 +88,20 @@ NDSTab:CreateButton({
         window:Notify({
             title = "Script Loaded",
             content = "Super ring parts V5 has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+JJSTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+JJSTab:CreateButton({
+    name = "Larp Hub (Key: Uro)",
+    callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/vNebpikE"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Larp Hub has been successfully loaded.",
             duration = 3,
         })
     end,

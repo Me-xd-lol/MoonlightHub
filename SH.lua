@@ -14,7 +14,7 @@ local window = Rayfield:CreateWindow({
 local HomeTab = window:CreateTab({ name = "Home", icon = 9405923687 })
 local UniversalTab = window:CreateTab({ name = "Universal / FE", icon = 15081504003 })
 local NDSTab = window:CreateTab({ name = "NDS", icon = 11894535915 })
-local JSSTab = window:CreateTab({ name = "JJS", icon = 11894535915 })
+local JJSTab = window:CreateTab({ name = "JJS", icon = 11894535915 })
 
 HomeTab:CreateSection({ name = "Player", icon = 13285102351 })
 

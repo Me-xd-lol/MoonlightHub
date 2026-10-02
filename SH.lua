@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet("https://sirius.menu/gen2"))()
 
 local window = Rayfield:CreateWindow({
     Name = "Moonlight Hub",
-    Subtitle = "",
+    Subtitle = "26.0.3",
     SidebarLayout = true,
 
     ShowIcon = true,

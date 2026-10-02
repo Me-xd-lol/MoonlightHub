@@ -16,6 +16,10 @@ local UniversalTab = window:CreateTab({ name = "Universal / FE", icon = 15081504
 local NDSTab = window:CreateTab({ name = "NDS", icon = 11894535915 })
 local JJSTab = window:CreateTab({ name = "JJS", icon = 11894535915 })
 local DoorsTab = window:CreateTab({ name = "Doors", icon = 11894535915 })
+local BloxFruitsTab = window:CreateTab({ name = "Blox Fruits", icon = 11894535915 })
+local DeadRailsTab = window:CreateTab({ name = "Dead Rails", icon = 11894535915 })
+local RivalsTab = window:CreateTab({ name = "Rivals", icon = 11894535915 })
+local IndustrialistTab = window:CreateTab({ name = "Industrialist", icon = 11894535915 })
 
 HomeTab:CreateSection({ name = "Player", icon = 13285102351 })
 
@@ -201,6 +205,86 @@ DoorsTab:CreateButton({
         window:Notify({
             title = "Script Loaded",
             content = "Msdoors has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+DoorsTab:CreateButton({
+    name = "Cheating Light",
+    callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Cheating-Light-230432"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Cheating Light script has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+DoorsTab:CreateButton({
+    name = "FazZzeta Doors",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/a123456789tt/doors/refs/heads/main/fff.luau")) ()
+        window:Notify({
+            title = "Script Loaded",
+            content = "FazZzeta Doors script has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+BloxFruitsTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+BloxFruitsTab:CreateButton({
+    name = "Tomato.Luau autofarm",
+    callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/XMAS-Blox-Fruits-Cash-Generator-OPEN-SOURCE-and-KEYLESS-25553"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Tomato.Luau autofarm script has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+DeadRailsTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+DeadRailsTab:CreateButton({
+    name = "Berpa Hub Autofarm",
+    callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Dead-Rails-OP-AUTO-BOND-KEYLESS-or-BERPA-HUB-230382"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Berpa Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+RivalsTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+RivalsTab:CreateButton({
+    name = "Korax",
+    callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/RIVALS-Korax-226484"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Korax script has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+IndustrialistTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+IndustrialistTab:CreateButton({
+    name = "Harmfulis' script",
+    callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Industrialist-OP-Script-Keyless-227159"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Harmfulis' script has been successfully loaded.",
             duration = 3,
         })
     end,

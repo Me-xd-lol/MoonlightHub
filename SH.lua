@@ -69,18 +69,6 @@ UniversalTab:CreateButton({
 })
 
 UniversalTab:CreateButton({
-    name = "Cryptic Hub",
-    callback = function()
-        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Cryptic-Hub-230349"))()
-        window:Notify({
-            title = "Script Loaded",
-            content = "Cryptic Hub has been successfully loaded.",
-            duration = 3,
-        })
-    end,
-})
-
-UniversalTab:CreateButton({
     name = "Solara Hub",
     callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SH.lua'))()

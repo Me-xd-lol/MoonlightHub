@@ -83,7 +83,7 @@ UniversalTab:CreateButton({
 UniversalTab:CreateButton({
     name = "AFEM Max",
     callback = function()
-        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-Max-LITE-NO-KEY-226299"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/refs/heads/main/afemmaxloader.lua"))()
         window:Notify({
             title = "Script Loaded",
             content = "AFEM Max has been successfully loaded.",

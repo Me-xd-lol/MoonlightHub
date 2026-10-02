@@ -93,6 +93,18 @@ UniversalTab:CreateButton({
 })
 
 UniversalTab:CreateButton({
+    name = "AFEM Max lite",
+    callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-Max-LITE-NO-KEY-226299"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "AFEM Max has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+UniversalTab:CreateButton({
     name = "7yd7 Emotes",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()

@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet("https://sirius.menu/gen2"))()
 
 local window = Rayfield:CreateWindow({
     Name = "Moonlight Hub",
-    Subtitle = "26.0.3",
+    Subtitle = "Version 26.1.1.0",
     SidebarLayout = true,
 
     ShowIcon = true,
@@ -20,6 +20,13 @@ local BloxFruitsTab = window:CreateTab({ name = "Blox Fruits", icon = 1189453591
 local DeadRailsTab = window:CreateTab({ name = "Dead Rails", icon = 11894535915 })
 local RivalsTab = window:CreateTab({ name = "Rivals", icon = 11894535915 })
 local IndustrialistTab = window:CreateTab({ name = "Industrialist", icon = 11894535915 })
+local BrookhavenTab = window:CreateTab({ name = "Brookhaven RP", icon = 11894535915 })
+local MM2Tab = window:CreateTab({ name = "MM2", icon = 11894535915 })
+local JailbreakTab = window:CreateTab({ name = "Jailbreak", icon = 11894535915 })
+local WAPPTab = window:CreateTab({ name = "Work at Pizza Place", icon = 11894535915 })
+local FischTab = window:CreateTab({ name = "Fisch", icon = 11894535915 })
+local TSBTab = window:CreateTab({ name = "TSB", icon = 11894535915 })
+local ExaminationTab = window:CreateTab({ name = "Examination", icon = 11894535915 })
 
 HomeTab:CreateSection({ name = "Player", icon = 13285102351 })
 
@@ -63,6 +70,18 @@ UniversalTab:CreateButton({
         window:Notify({
             title = "Script Loaded",
             content = "Infinite Yield has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+UniversalTab:CreateButton({
+    name = "Sp3arParvus",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JakeHukari/Sp3arParvus/refs/heads/main/Sp3arParvus.lua", true))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Sp3arParvus has been successfully loaded.",
             duration = 3,
         })
     end,
@@ -234,6 +253,30 @@ DoorsTab:CreateButton({
     end,
 })
 
+DoorsTab:CreateButton({
+    name = "Nova Hub",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kyksikoid/Doors-Script/main/doors.lua"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Nova Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+DoorsTab:CreateButton({
+    name = "Project Midas",
+    callback = function()
+        loadstring(game:HttpGet("https://vss.pandauth.com/kv/80acc5794c9608fd"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Project Midas has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
 BloxFruitsTab:CreateSection({ name = "Scripts", icon = 9405930424 })
 
 BloxFruitsTab:CreateButton({
@@ -285,6 +328,176 @@ IndustrialistTab:CreateButton({
         window:Notify({
             title = "Script Loaded",
             content = "Harmfulis' script has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+BrookhavenTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+BrookhavenTab:CreateButton({
+    name = "Sander XY",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/testUIDK/refs/heads/main/panel.lua"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Sander XY has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+BrookhavenTab:CreateButton({
+    name = "RTG V2",
+    callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-RTG-V2-230381"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "RTG V2 has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+MM2Tab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+MM2Tab:CreateButton({
+    name = "Vertex",
+    callback = function()
+        loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Vertex has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+MM2Tab:CreateButton({
+    name = "SP Hub",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Loader"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "SP Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+JailbreakTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+JailbreakTab:CreateButton({
+    name = "Lumen Hub",
+    callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/mbm9XDQG"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Lumen Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+JailbreakTab:CreateButton({
+    name = "Tase Hub",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/banibacks20001/Tase-Hub/3e55f2c331f411250d26f73324e3d45cb7ee9ba5/Tase-Hub.lua"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Tase Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+WAPPTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+WAPPTab:CreateButton({
+    name = "Pizza Hub",
+    callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Z185LTMD"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Pizza Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+FischTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+FischTab:CreateButton({
+    name = "Alchemy Hub",
+    callback = function()
+        loadstring(game:HttpGet('https://getalchemy.net/n'))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Alchemy Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+TSBTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+TSBTab:CreateButton({
+    name = "Vexon Hub (Key system)",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Vexon Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+TSBTab:CreateButton({
+    name = "Project Trinity AutoFarm",
+    callback = function()
+        loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/3Mq0uheDL06w7G6t/raw"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Project Trinity has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+ExaminationTab:CreateSection({ name = "Scripts", icon = 9405930424 })
+
+ExaminationTab:CreateButton({
+    name = "Umera script",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/noble865/Examination/refs/heads/main/Examination"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Umera script has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+ExaminationTab:CreateButton({
+    name = "TomTamX Hub",
+    callback = function()
+        loadstring(game:HttpGet("https://vss.pandauth.com/virtual/file/f1ad8cc7853648ed"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "TomTamX Hub has been successfully loaded.",
+            duration = 3,
+        })
+    end,
+})
+
+ExaminationTab:CreateButton({
+    name = "Happiness Hub",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HappinessAlive/Happiness/refs/heads/main/Examination"))()
+        window:Notify({
+            title = "Script Loaded",
+            content = "Happiness Hub has been successfully loaded.",
             duration = 3,
         })
     end,
